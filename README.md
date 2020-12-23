@@ -1,2 +1,2 @@
 # Python_selenium
-test 1
+test 2
