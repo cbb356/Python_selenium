@@ -6,12 +6,12 @@ class test_group(unittest.TestCase):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(60)
 
-    def login(self, driver):
+    def open_page(self, driver):
         driver.get("http://www.python.org")
 
     def test_group(self):
         driver = self.driver
-        self.login(driver)
+        self.open_page(driver)
 
     def tearDown(self):
         self.driver.quit()
