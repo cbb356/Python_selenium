@@ -2,6 +2,7 @@ from selenium import webdriver
 from fixture.session_helper import SessionHelper
 from fixture.group_helper import GroupHelper
 
+
 class Application:
 
     def __init__(self):
