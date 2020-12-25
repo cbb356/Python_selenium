@@ -1,5 +1,3 @@
-from time import sleep
-
 class SessionHelper:
 
     def __init__(self, app):
@@ -7,7 +5,6 @@ class SessionHelper:
 
     def login(self, username, password):
         driver = self.app.driver
-        self.app.navigation.open_home_page()
         driver.find_element_by_name("user").click()
         driver.find_element_by_name("user").clear()
         driver.find_element_by_name("user").send_keys(username)
@@ -19,4 +16,3 @@ class SessionHelper:
     def logout(self):
         driver = self.app.driver
         driver.find_element_by_link_text("Logout").click()
-        sleep(3)

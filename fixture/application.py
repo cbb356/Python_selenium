@@ -12,6 +12,7 @@ class Application:
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.navigation = NavigationHelper(self)
+        self.navigation.open_home_page()
 
     def destructor(self):
         self.driver.quit()
